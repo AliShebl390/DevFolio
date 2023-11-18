@@ -1,0 +1,127 @@
+:root {
+    --main-color: #0078ff;
+    --main-transition: 0.3s;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Start Nav */
+nav {
+    opacity: 0.9;
+}
+
+nav .navbar-brand {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav .container a {
+    color: white;
+}
+
+nav .container:hover a,
+nav .container a:focus,
+nav .container a:visited {
+    color: white;
+}
+
+nav .container ul > li:hover a {
+    color: var(--main-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #0078ff;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a {
+    color: black;
+}
+
+nav .navbar-nav li {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 10px 0 10px 30px
+}
+nav .navbar-nav li a {
+    padding: 0px;
+}
+
+nav .navbar-nav li a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: 0px;
+    background-color: var(--main-color);
+    transition: var(--main-transition);
+}
+
+nav .navbar-nav li:hover a::before {
+    width: 50%;
+}
+
+nav .navbar-nav .dropdown .dropdown-menu {
+    transition: all var(--main-transition);
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    top: 110%;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+nav .navbar-nav .dropdown:hover > .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+nav .navbar-nav .dropdown .dropdown-menu li a::before {
+    width: 0;
+}
+
+nav .navbar-nav .dropdown .dropdown-menu li  {
+    padding: 0;
+}
+
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: none;
+    color: #4e4e4e;
+}
+
+.dropend .dropdown-two {
+    font-weight: 400;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.dropend ul{
+    left: 100%;
+    /* position: absolute; */
+}
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
+nav .navbar-nav .dropend:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* body:not(body:has(:target)) li a[href="#home"]::before,
+body:has(.home:target) li a[href="#home"]::before,
+body:has(.chefs:target) li a[href="#chefs"]::before,
+body:has(.contact:target) li a[href="#contact"]::before,
+body:has(.gallery:target) li a[href="#gallery"]::before {
+    width: 75%;
+} */
+
+/* End Nav */
