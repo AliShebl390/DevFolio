@@ -20,21 +20,22 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-black py-2">
+    <!-- Start of nav -->
+    <nav class="navbar navbar-expand-lg bg-black py-2 fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">DevFolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link p-0" aria-current="page" href="#">Home</a>
+                        <a class="nav-link p-0" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-0" aria-current="page" href="#">About</a>
+                        <a class="nav-link p-0" aria-current="page" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link p-0" aria-current="page" href="#">Services</a>
@@ -62,7 +63,7 @@
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Action</a></li>
-                                    
+
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                 </ul>
                             </li>
@@ -76,6 +77,82 @@
             </div>
         </div>
     </nav>
+    <!-- End of nav -->
+    <!-- Start of home -->
+    <seciton class="home w-100 d-block" id="home">
+        <div class="layer w-100 flex-wrap d-flex align-content-center justify-content-center text-white">
+            <div class="content d-flex flex-column align-items-center">
+                <h1>I am Aly Shebl</h1>
+                <div class="animated-text">
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </seciton>
+    <!-- End of home -->
+    <!-- Start About -->
+    <section class="about py-5 bg-body-secondary" id="about">
+        <div class="container bg-body-tertiary p-5">
+            <div class="row my-2">
+                <div class="left-cont col-md-6 mb-5 mb-md-0">
+                    <div class="profile d-flex mt-0 my-4 mx-md-0 justify-content-between row align-items-end">
+                            <div class="left-pro mb-3 mb-lg-0 me-4 me-xl-0 px-md-0 col-lg-3 col-12">
+                                <img class="rounded-2" src="images/testimonial-2.jpg" alt="">
+                            </div>
+                            <div class="right-pro me-0 col-lg-7 px-md-0 col-12">
+                                <p class="mb-2"><span class="fw-semibold">Name:</span> Morgan freeman</p>
+                                <p class="mb-2"><span class="fw-semibold">Profile:</span> full stack developer</p>
+                                <p class="mb-2"><span class="fw-semibold">Email:</span> contact@example.com</p>
+                                <p class="mb-2"><span class="fw-semibold">Name:</span> (617) 557-0089</p>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h5 class="fw-bolder">Skills:</h5>
+                        <p class="my-2 text-uppercase">Html 85%</p>
+                        <div class="progress bg-primary-subtle rounded-0 m-0 p-0">
+                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="my-2 text-uppercase">Css 75%</p>
+                        <div class="progress bg-primary-subtle rounded-0 m-0 p-0">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="my-2 text-uppercase">PHP 50%</p>
+                        <div class="progress bg-primary-subtle rounded-0 m-0 p-0">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="my-2 text-uppercase">Javascript 90%</p>
+                        <div class="progress bg-primary-subtle rounded-0 m-0 p-0">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-cont col-md-6">
+                    <h2 class="mb-5">About me</h2>
+                    <p class="lead">
+                        Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan
+                        id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas
+                        non nisi. Nulla porttitor accumsan tincidunt.
+                    </p>
+                    <p class="lead">
+                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                        porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                        porttitor at sem.
+                    </p>
+                    <p class="lead">
+                        Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id
+                        enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh
+                        pulvinar a.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
 </body>
 
 </html>
