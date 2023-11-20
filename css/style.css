@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
 }
 
 h1,
@@ -15,6 +16,32 @@ h5,
 h6 {
     color: #1e1e1e;
 }
+
+/* Main heading */
+.main-heading h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-heading p {
+    color: #4e4e4e;
+}
+
+.main-heading {
+    position: relative;
+}
+.main-heading::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: var(--main-color);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 /* Start Nav */
 nav {
@@ -131,7 +158,7 @@ nav .navbar-nav .dropend:hover ul {
 body:not(body:has(:target)) li a[href="#home"]::before,
 body:has(.home:target) li a[href="#home"]::before,
 body:has(.about:target) li a[href="#about"]::before,
-body:has(.contact:target) li a[href="#contact"]::before,
+body:has(.services:target) li a[href="#services"]::before,
 body:has(.gallery:target) li a[href="#gallery"]::before {
     width: 50%;
 }
@@ -141,6 +168,7 @@ body:has(.gallery:target) li a[href="#gallery"]::before {
 .home {
     height: 100vh;
     background-image: url(../images/hero-bg.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
@@ -254,5 +282,43 @@ body:has(.gallery:target) li a[href="#gallery"]::before {
     width: 150px;
     height: 150px;
 }
-
 /* End About */
+/* Start Services */
+.services .card {
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.services .card .round {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 10px #0078ff;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+
+.services .card:hover .round {
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.services .card .round span {
+    font-size: 40px;
+}
+
+.services .card .card-body h5 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.4rem 0;
+    font-weight: 600;
+}
+
+.services .card .card-body p {
+    color: #4e4e4e;
+}
+/* End Services */
