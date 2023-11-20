@@ -31,6 +31,7 @@ h6 {
 .main-heading {
     position: relative;
 }
+
 .main-heading::before {
     position: absolute;
     content: "";
@@ -248,10 +249,12 @@ body:has(.gallery:target) li a[href="#gallery"]::before {
     .home .layer .content h1 {
         font-size: 2.5rem;
     }
+
     .animated-text p {
         font-size: 1.5rem;
     }
 }
+
 /* Home-annimation */
 /* End of home of home */
 /* Start About */
@@ -282,6 +285,7 @@ body:has(.gallery:target) li a[href="#gallery"]::before {
     width: 150px;
     height: 150px;
 }
+
 /* End About */
 /* Start Services */
 .services .card {
@@ -291,6 +295,7 @@ body:has(.gallery:target) li a[href="#gallery"]::before {
     box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
     border: none;
 }
+
 .services .card .round {
     width: 100px;
     height: 100px;
@@ -321,4 +326,65 @@ body:has(.gallery:target) li a[href="#gallery"]::before {
 .services .card .card-body p {
     color: #4e4e4e;
 }
+
 /* End Services */
+/* Start counter */
+.counter {
+    background-image: url(../images/counters-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: white;
+}
+
+.counter .layer {
+    padding: 8rem 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0077ffbb;
+}
+
+@media only screen and (max-width: 567px) {
+    .counter .layer {
+        padding: 4rem 0;
+    }
+
+    .counter .layer .col {
+        margin-bottom: 25px;
+    }
+
+    .counter .layer .col:nth-of-type(4) {
+        margin-bottom: 0px;
+    }
+}
+
+.counter .row {
+    margin: 0;
+}
+
+.counter .layer .counter-box p:nth-of-type(1) {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.counter .layer .counter-box p:nth-of-type(2) {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.counter .layer .counter-box .round {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+    transition: all 500ms ease;
+}
+
+.counter .layer .counter-box .round i {
+    font-size: 2rem;
+}
+
+/* End counter */
