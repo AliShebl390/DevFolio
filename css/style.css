@@ -177,7 +177,8 @@ body:has(.home:target) li a[href="#home"]::before,
 body:has(.about:target) li a[href="#about"]::before,
 body:has(.services:target) li a[href="#services"]::before,
 body:has(.portfolio:target) li a[href="#portfolio"]::before,
-body:has(.gallery:target) li a[href="#gallery"]::before {
+body:has(.blog:target) li a[href="#blog"]::before, 
+body:has(.contact:target) li a[href="#contact"]::before {
     width: 50%;
 }
 
@@ -411,6 +412,7 @@ body:has(.gallery:target) li a[href="#gallery"]::before {
     position: relative;
     z-index: 1;
     padding: 2rem 3% 1rem 4%;
+    overflow: hidden;
 }
 
 .portfolio .port-main-content .card .card-body .left-cont h5 {
