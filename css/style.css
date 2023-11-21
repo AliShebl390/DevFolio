@@ -160,6 +160,7 @@ body:not(body:has(:target)) li a[href="#home"]::before,
 body:has(.home:target) li a[href="#home"]::before,
 body:has(.about:target) li a[href="#about"]::before,
 body:has(.services:target) li a[href="#services"]::before,
+body:has(.portfolio:target) li a[href="#portfolio"]::before,
 body:has(.gallery:target) li a[href="#gallery"]::before {
     width: 50%;
 }
@@ -388,3 +389,111 @@ body:has(.gallery:target) li a[href="#gallery"]::before {
 }
 
 /* End counter */
+/* Start Portfolio */
+.portfolio .port-main-content .card {
+    overflow: hidden;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    border: none;
+}
+
+.portfolio .port-main-content .card img {
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.portfolio .port-main-content .card:hover img {
+    transform: scale(1.3);
+}
+
+.portfolio .port-main-content .card .card-body {
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 2rem 3% 1rem 4%;
+}
+
+.portfolio .port-main-content .card .card-body .left-cont h5 {
+    font-size: 1.2rem;
+    color: #1e1e1e;
+}
+
+.portfolio .port-main-content .card .card-body .left-cont p span {
+    color: var(--main-color);
+}
+
+.portfolio .port-main-content .card .card-body .left-cont p {
+    color: #4e4e4e;
+    font-size: 0.8rem;
+}
+
+.portfolio .port-main-content .card .card-body .right-cont span {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+/* End Portfolio */
+/* start Carousel */
+
+.carsouel {
+    background-image: url(../images/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: white;
+}
+
+.carsouel .layer {
+    padding: 8rem 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0077ffbb;
+}
+
+.carsouel .inner-car h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 1rem 0;
+    display: block;
+    font-size: 1.4rem;
+}
+
+.carsouel .inner-car img {
+    border-radius: 50%;
+}
+
+.carsouel .carousel-indicators {
+    top: 100%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .carsouel .inner-car {
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .carsouel .inner-car {
+        padding: 0 8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carsouel .inner-car {
+        padding: 0 13rem;
+    }
+}
+
+/* End Carousel */
